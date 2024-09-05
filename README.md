@@ -9,7 +9,7 @@ The inaugural Browser Jam will take place on Sep 13th thru 15th, 2024.
 - It begins on [Sep 13th at 4pm UTC](https://everytimezone.com/?t=66e4d200,-1e0).
 - It ends on [Sep 15th at 4pm UTC](https://everytimezone.com/?t=66e4d200,960).
 
-Join [our Discord server](https://discord.gg/AhcCZA9x) to participate!
+Join [our Discord server](https://discord.gg/MAmkZ5BPEK) to participate!
 
 Browsers should be submitted as PRs to the [jam001](https://github.com/BrowserJam/jam001) repo before the jam ends.
 
@@ -21,7 +21,7 @@ Browsers should be submitted as PRs to the [jam001](https://github.com/BrowserJa
 
 ## Who can jam?
 
-Everyone is welcome to jam! You can participate solo, or as a team. If you'd like to find people to team up with, join [our Discord server](https://discord.gg/AhcCZA9x)!
+Everyone is welcome to jam! You can participate solo, or as a team. If you'd like to find people to team up with, join [our Discord server](https://discord.gg/MAmkZ5BPEK)!
 
 ## What tech can I use?
 
