@@ -26,12 +26,13 @@ html, body, .root {
     width: 100%;
 }
 
-.input-container,
-.input-container textarea {
+.input-container {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
+    white-space: pre;
 }
+
 
 .canvas-container {
     overflow: hidden;
