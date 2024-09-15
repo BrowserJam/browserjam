@@ -25,8 +25,8 @@ async function main() {
   let text: string | undefined;
   let html: Node | undefined;
 
-  async function resize() {
-    if (canvas.parentElement) {
+  async function resizeAndRun() {
+    if (html && canvas.parentElement) {
       const ratio = window.devicePixelRatio;
       const width = canvas.parentElement.clientWidth;
       const height = canvas.parentElement.clientHeight;
@@ -34,6 +34,8 @@ async function main() {
       canvas.style.height = `${height}px`;
       canvas.width = canvas.parentElement.clientWidth * ratio;
       canvas.height = canvas.parentElement.clientHeight * ratio;
+
+      render(canvas, html);
     }
   }
 
@@ -42,9 +44,14 @@ async function main() {
     html = parse(text);
     htmlDisplay.textContent = html.html();
 
-    resize();
-    render(canvas, html);
+    resizeAndRun();
   }
+
+  const observer = new ResizeObserver(() => {
+    resizeAndRun();
+  });
+  observer.observe(canvas.parentElement!);
+
 
   addressBar.addEventListener("blur", run);
   run();

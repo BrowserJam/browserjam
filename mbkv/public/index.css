@@ -15,7 +15,7 @@ html, body, .root {
 .root {
     display: grid;
     grid-template-rows: min-content 1fr;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 500px 1fr;
 }
 
 .address-bar {
@@ -30,4 +30,9 @@ html, body, .root {
 .input-container textarea {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+
+.canvas-container {
+    overflow: hidden;
 }
