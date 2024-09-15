@@ -1,0 +1,24 @@
+{
+  "name": "canvas-dom-renderer",
+  "module": "src/index.ts",
+  "type": "module",
+  "license": "0BSD",
+  "dependencies": {
+    "cors-anywhere": "^0.4.4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "concurrently": "^8.2.2",
+    "prettier": "^3.3.3",
+    "serve": "^14.2.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "concurrently bun:start:*",
+    "start:proxy": "bun run bin/proxy.ts",
+    "start:tsc": "bash ./build.sh",
+    "start:serve": "serve public"
+  }
+}
