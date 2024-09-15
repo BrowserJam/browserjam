@@ -18,7 +18,7 @@
   "scripts": {
     "start": "concurrently bun:start:*",
     "start:proxy": "bun run bin/proxy.ts",
-    "start:tsc": "bash ./build.sh",
+    "start:tsc": "bun build src/index.ts --sourcemap --outdir public/",
     "start:serve": "serve public"
   }
 }
